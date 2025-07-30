@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function gstCal(){
+            var a = parseInt(document.getElementById("1").value)
+            var r = parseInt(document.getElementById("2").value)
+
+           document.getElementById("3").innerHTML = "total amount: "+ ((a*r/100) + a) 
+        }
+    </script>
+</head>
+<body>
+    Amount: <input type="text" id="1">
+    GST rate: <input type="text" id="2">
+    <input type="button" onclick="gstCal()" value="=">
+    <p id="3"></p>
+</body>
+</html>

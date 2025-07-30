@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write('<b>hello world!</b>')
+        document.write('<h6>hello world</h6>')
+
+        var a = 1
+        var b = 3
+        var c = a + b
+        document.write(`a is ${a} b is ${b} c is ${c}`)
+
+        document.write("<table border='1'>")
+                document.write('<tr>')
+            for (let i=0; i<100 ; i++){
+                // document.write(`<td>${i}</td>`)
+                document.write('<td>')
+                document.write(i)
+                document.write('</td>')
+
+            }
+            document.write('</tr>')
+        document.write('</table>')
+
+        var a = [40,20,502,508]
+        document.write(a)
+
+        for(var i=0; i<a.length; i++){
+            document.write('</br>'+a[i])
+        }
+
+        for(i in a) {
+            document.write('</br>'+i+' '+a[i])
+        }
+ 
+        for(i of a){
+            document.write('</br>value is'+i)
+        }
+
+        a.forEach(function(value, index, a){
+            document.write("</br>index is"+index+"value is"+value+" Array"+a)
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
